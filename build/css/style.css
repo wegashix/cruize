@@ -1297,6 +1297,33 @@ button,
   color: #15ab07;
 }
 
+.background-header img {
+  margin: 0 auto;
+}
+
+.header-wrapper {
+  position: relative;
+}
+
+.nav {
+  max-width: 1160px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+}
+
+.nav button {
+  display: none;
+}
+
+.nav__list img {
+  display: none;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
