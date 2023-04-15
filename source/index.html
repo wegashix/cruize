@@ -34,26 +34,28 @@
           <picture>
 
             <source media="(max-width: 767px)" type="image/webp"
-              srcset="./img/article-mobile1x.webp 1x, ./img/article-mobile2x.webp 2x">
-            <source media="(max-width: 320px)" type="image/png"
-              srcset="./img/article-mobile1x.png 1x, ./img/article-mobile2x.png 2x">
+              srcset="./img/article-mobile@1x.webp 1x, ./img/article-mobile@2x.webp 2x">
+            <source media="(max-width: 767px)" type="image/png"
+              srcset="./img/article-mobile@1x.png 1x, ./img/article-mobile@2x.png 2x">
 
             <source media="(max-width: 1023px)" type="image/webp"
-              srcset="./img/article-tablet1x.webp 1x, ./img/article-tablet2x.webp 2x">
-            <source media="(max-width: 320px)" type="image/png"
-              srcset="./img/article-tablet1x.png 1x, ./img/article-tablet2x.png 2x">
+              srcset="./img/article-tablet@1x.webp 1x, ./img/article-tablet@2x.webp 2x">
+            <source media="(max-width: 1023px)" type="image/png"
+              srcset="./img/article-tablet@1x.png 1x, ./img/article-tablet@2x.png 2x">
 
             <source type="image/webp" srcset="./img/article-desctop@1x.webp 1x, ./img/article-desctop2x.webp 2x">
 
-            <source media="(max-width: 320px)" type="image/png"
-              srcset="./img/article-desctop1x.png 1x, ./img/article-desctop2x.png 2x">
-
-            <img src="./img/article-desctop@1x.png" alt="горы." width="1366" height="650">
+            <img src="./img/article-desctop@1x.png" alt="горы." width="1366" height="650"
+              srcset="./img/article-desctop@1x.png 1x, ./img/article-desctop@2x.png 2x">
 
           </picture>
 
-        </div>
+          <article class="article">
+            <h1>Круизы <br class="nav-br">в Антарктику </h1>
+            <p>Волшебный мир<br class="nav-br"> айсбергов и пингвинов</p>
+          </article>
 
+        </div>
 
         <nav class="nav container">
 
@@ -61,8 +63,10 @@
             <img src="img/logo-white.svg" alt="логотип компании" width="70" height="38">
           </a>
 
+          <!-- active для откртытия меню добавлять кнопке и меню -->
+
           <button type="button" aria-label="открыть-скрыть меню">
-            <span class="nav__button-line"></span>
+            <span></span>
           </button>
 
           <div class="nav__list">
@@ -80,10 +84,6 @@
 
         </nav>
 
-        <article class="article">
-          <h1>Круизы в Антарктику </h1>
-          <p>Волшебный мир айсбергов и пингвинов</p>
-        </article>
 
       </div>
 
