@@ -428,6 +428,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  font-family: "Montserrat";
 }
 
 html {
@@ -1299,6 +1300,8 @@ button,
 
 .background-header img {
   margin: 0 auto;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header-wrapper {
@@ -1306,7 +1309,7 @@ button,
 }
 
 .nav {
-  max-width: 1160px;
+  max-width: 1224px;
   width: 100%;
   position: absolute;
   top: 0;
@@ -1314,14 +1317,67 @@ button,
   -webkit-transform: translate(-50%);
   -ms-transform: translate(-50%);
   transform: translate(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+
+.nav img {
+  margin-top: 7px;
 }
 
 .nav button {
   display: none;
 }
 
+.nav__list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .nav__list img {
   display: none;
+}
+
+.nav__list li {
+  list-style: none;
+  margin-left: 34px;
+}
+
+.nav__list a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #F9FBFD;
+}
+
+.article {
+  position: absolute;
+  top: 234px;
+  left: 198px;
+}
+
+.article h1 {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 66px;
+  color: #F9FBFD;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 12px;
+}
+
+.article p {
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #F9FBFD;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* @mixin hover-focus {
