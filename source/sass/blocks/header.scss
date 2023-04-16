@@ -63,6 +63,12 @@
     margin-top: 8px;
     margin-left: -3px;
   }
+
+  transition: opacity, 0.5s;
+
+  &:hover {
+    opacity: 0.8;
+  } 
 }
 
 .nav button {
@@ -176,11 +182,11 @@
 
 .nav__list img {
   display: none;
-  opacity: 0;
-  transition: opacity, 3s;
 }
 
 .nav__list.active img {
+  transition: transform, 0.8s;
+
   @include vp-767 {
     opacity: 1;
     display: block;
@@ -188,6 +194,7 @@
     z-index: 99;
     top: 0;
     right: 224px;
+    transform: translateX(0);
   }
 }
 
@@ -205,6 +212,11 @@
   font-size: 16px;
   line-height: 20px;
   color: $color-white;
+  transition: opacity, 0.5s;
+
+  &:hover {
+    opacity: 0.8;
+  }
 
   @include vp-1023 {
     font-size: 14px;

@@ -1347,6 +1347,13 @@ button,
 
 .nav img {
   margin-top: 7px;
+  -webkit-transition: opacity, 0.5s;
+  -o-transition: opacity, 0.5s;
+  transition: opacity, 0.5s;
+}
+
+.nav img:hover {
+  opacity: 0.8;
 }
 
 .nav button {
@@ -1412,10 +1419,14 @@ button,
 
 .nav__list img {
   display: none;
-  opacity: 0;
-  -webkit-transition: opacity, 3s;
-  -o-transition: opacity, 3s;
-  transition: opacity, 3s;
+}
+
+.nav__list.active img {
+  -webkit-transition: 0.8s, -webkit-transform;
+  transition: 0.8s, -webkit-transform;
+  -o-transition: transform, 0.8s;
+  transition: transform, 0.8s;
+  transition: transform, 0.8s, -webkit-transform;
 }
 
 .nav__list li {
@@ -1428,6 +1439,13 @@ button,
   font-size: 16px;
   line-height: 20px;
   color: #F9FBFD;
+  -webkit-transition: opacity, 0.5s;
+  -o-transition: opacity, 0.5s;
+  transition: opacity, 0.5s;
+}
+
+.nav__list a:hover {
+  opacity: 0.8;
 }
 
 .nav-br {
@@ -1437,7 +1455,10 @@ button,
 .article {
   position: absolute;
   top: 234px;
-  left: 198px;
+  left: 38%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
 }
 
 .article h1 {
@@ -1447,6 +1468,7 @@ button,
   color: #F9FBFD;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 12px;
+  white-space: nowrap;
 }
 
 .article p {
@@ -1627,7 +1649,8 @@ button,
   }
 
   .article {
-    left: 45px;
+    left: 44%;
+    max-width: 590px;
   }
 
   .article h1 {
@@ -1770,6 +1793,9 @@ button,
     z-index: 99;
     top: 0;
     right: 224px;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
   }
 
   .nav-br {
@@ -1778,7 +1804,7 @@ button,
 
   .article {
     top: 152px;
-    left: 15px;
+    left: 46%;
     z-index: 0;
   }
 
