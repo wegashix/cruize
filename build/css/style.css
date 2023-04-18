@@ -429,6 +429,7 @@ body {
   padding: 0;
   min-height: 100vh;
   font-family: "Montserrat";
+  background-color: #F9FBFD;
 }
 
 html {
@@ -1622,9 +1623,9 @@ button,
 }
 
 .advantages__wrapper {
-  background-image: url(../../img/advantages-desctop@2x.png);
+  background-image: url(../img/advantages-desctop@2x.png);
   width: 100%;
-  padding: 82px 71px;
+  padding: 82px 71px 120px;
 }
 
 .advantages__wrapper h3 {
@@ -1666,6 +1667,132 @@ button,
   line-height: 140%;
   color: #011C40;
   margin-bottom: 15px;
+}
+
+.near-cruize {
+  padding: 57px 0;
+}
+
+.near-cruize__cards {
+  padding: 21px 86px;
+  display: -ms-grid;
+  display: grid;
+  gap: 30px;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.near-cruize__card {
+  position: relative;
+  max-width: 260px;
+  width: 100%;
+  min-height: 386px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  cursor: pointer;
+}
+
+.near-cruize__card.astoria {
+  background-image: url(../../img/astoria@1x.png);
+}
+
+.near-cruize__card h4 {
+  margin-bottom: 22px;
+  margin-left: 30px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #F9FBFD;
+}
+
+.near-cruize h3 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  color: #011C40;
+}
+
+.near-cruize__description {
+  padding: 28px 25px;
+  background: #011C40;
+  -webkit-box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+  box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity, 0.8s;
+  -o-transition: opacity, 0.8s;
+  transition: opacity, 0.8s;
+}
+
+.near-cruize__card:hover > .near-cruize__description {
+  opacity: 1;
+}
+
+.near-cruize__card:focus-within > .near-cruize__description {
+  opacity: 1;
+}
+
+.near-cruize__description h4 {
+  margin-left: 0;
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #F9FBFD;
+  margin-top: 0;
+}
+
+.near-cruize__description span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  color: #F9FBFD;
+  margin-bottom: 0;
+}
+
+.near-cruize__description p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #F9FBFD;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.near-cruize__description button {
+  margin-top: 18px;
+  cursor: pointer;
+  color: #011C40;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  border: none;
+  background-color: #F9FBFD;
+  min-width: 210px;
+  width: 100%;
+  padding: 10px;
+  -webkit-transition: opacity, 0.8s;
+  -o-transition: opacity, 0.8s;
+  transition: opacity, 0.8s;
+}
+
+.near-cruize__description button:hover {
+  opacity: 0.8;
 }
 
 /* @mixin hover-focus {
