@@ -563,6 +563,7 @@ button,
 
 .wrapper {
   position: relative;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1299,10 +1300,6 @@ button,
   color: #15ab07;
 }
 
-.overflow-hidden {
-  overflow: hidden;
-}
-
 .background-header img {
   margin: 0 auto;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1674,7 +1671,10 @@ button,
 }
 
 .near-cruize__cards {
-  padding: 21px 86px;
+  margin: 0 auto;
+  max-width: 1130px;
+  width: 100%;
+  padding: 21px 0;
   display: -ms-grid;
   display: grid;
   gap: 30px;
@@ -1697,23 +1697,12 @@ button,
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: start;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: end;
   cursor: pointer;
-}
-
-.near-cruize__card.astoria {
-  background-image: url(../../img/astoria@1x.png);
-}
-
-.near-cruize__card h4 {
-  margin-bottom: 22px;
-  margin-left: 30px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 150%;
-  color: #F9FBFD;
+  padding: 28px 25px;
+  padding-bottom: 10px;
+  background: #011C40;
+  -webkit-box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+  box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
 }
 
 .near-cruize h3 {
@@ -1724,40 +1713,62 @@ button,
   color: #011C40;
 }
 
-.near-cruize__description {
-  padding: 28px 25px;
-  background: #011C40;
-  -webkit-box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
-  box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
+.near__cruize-desc {
   -webkit-transition: opacity, 0.8s;
   -o-transition: opacity, 0.8s;
   transition: opacity, 0.8s;
+  opacity: 0;
 }
 
-.near-cruize__card:hover > .near-cruize__description {
-  opacity: 1;
+.near-cruize__bg {
+  -webkit-transition: opacity, 0.8s;
+  -o-transition: opacity, 0.8s;
+  transition: opacity, 0.8s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
 }
 
-.near-cruize__card:focus-within > .near-cruize__description {
-  opacity: 1;
-}
-
-.near-cruize__description h4 {
-  margin-left: 0;
+.near__cruize-desc h4 {
   margin-bottom: 12px;
+  margin-top: 0;
+  margin-left: 0;
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
   color: #F9FBFD;
-  margin-top: 0;
 }
 
-.near-cruize__description span {
+.near-cruize__bg h4 {
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 22px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #F9FBFD;
+}
+
+.near__cruize-desc span {
   font-weight: 500;
   font-size: 14px;
   line-height: 140%;
@@ -1765,7 +1776,7 @@ button,
   margin-bottom: 0;
 }
 
-.near-cruize__description p {
+.near__cruize-desc p {
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
@@ -1774,8 +1785,11 @@ button,
   margin-bottom: 8px;
 }
 
-.near-cruize__description button {
-  margin-top: 18px;
+.near__cruize-desc a {
+  display: block;
+  text-align: center;
+  margin-top: 26px;
+  margin-bottom: 0px;
   cursor: pointer;
   color: #011C40;
   font-weight: 600;
@@ -1791,8 +1805,56 @@ button,
   transition: opacity, 0.8s;
 }
 
-.near-cruize__description button:hover {
+.near__cruize-desc a:hover {
   opacity: 0.8;
+}
+
+.near-cruize__card:hover > .near__cruize-desc {
+  opacity: 1;
+}
+
+.near-cruize__card:hover > .near-cruize__bg {
+  opacity: 0;
+}
+
+.near-cruize__card:focus-within > .near__cruize-desc {
+  opacity: 1;
+}
+
+.near-cruize__card:focus-within > .near-cruize__bg {
+  opacity: 0;
+}
+
+.astoria {
+  background-image: url(../img/astoria.png);
+}
+
+.elain {
+  background-image: url(../img/elain.png);
+}
+
+.atlantis {
+  background-image: url(../img/atlantis.png);
+}
+
+.odissey {
+  background-image: url(../img/odissey.png);
+}
+
+.olimpia {
+  background-image: url(../img/olimpia.png);
+}
+
+.avrora {
+  background-image: url(../img/avrora.png);
+}
+
+.leonor {
+  background-image: url(../img/leonor.png);
+}
+
+.minion {
+  background-image: url(../img/minion.png);
 }
 
 /* @mixin hover-focus {
@@ -1839,6 +1901,17 @@ button,
 @media (max-width: 1439px) {
   .container {
     padding: 0 32px;
+  }
+}
+
+@media (max-width: 1223px) {
+  .near-cruize__cards {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .near-cruize__card {
+    margin: 0 auto;
   }
 }
 
@@ -1959,6 +2032,75 @@ button,
   .advantages__card img {
     height: 26px;
     margin-left: -4px;
+  }
+
+  .near-cruize {
+    padding: 64px 0;
+  }
+
+  .near-cruize__cards {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    padding: 23px 36px;
+  }
+
+  .near-cruize__card {
+    max-width: 309px;
+  }
+
+  .near-cruize h3 {
+    font-size: 26px;
+  }
+
+  .near__cruize-desc {
+    padding: 0 10px;
+  }
+
+  .near-cruize__bg {
+    -o-object-fit: cover;
+    object-fit: cover;
+    background-size: contain;
+  }
+
+  .near-cruize__bg h4 {
+    margin-left: 35px;
+    margin-bottom: 27px;
+  }
+
+  .near__cruize-desc a {
+    font-size: 14px;
+  }
+
+  .astoria {
+    background-image: url(../img/astoria-tablet.png);
+  }
+
+  .elain {
+    background-image: url(../img/elain-tablet.png);
+  }
+
+  .atlantis {
+    background-image: url(../img/atlantis-tablet.png);
+  }
+
+  .odissey {
+    background-image: url(../img/odissey-tablet.png);
+  }
+
+  .olimpia {
+    background-image: url(../img/olimpia-tablet.png);
+  }
+
+  .avrora {
+    background-image: url(../img/avrora-tablet.png);
+  }
+
+  .leonor {
+    background-image: url(../img/leonor-tablet.png);
+  }
+
+  .minion {
+    background-image: url(../img/minion-tablet.png);
   }
 }
 
@@ -2187,6 +2329,66 @@ button,
   .advantages__card {
     min-height: 250px;
     padding-bottom: 0;
+  }
+
+  .near-cruize {
+    padding-top: 32px;
+  }
+
+  .near-cruize__cards {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px 0;
+  }
+
+  .near-cruize__card {
+    max-width: 270px;
+  }
+
+  .near-cruize h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .near__cruize-desc {
+    padding: 0;
+  }
+
+  .near-cruize__bg h4 {
+    margin-left: 25px;
+    margin-bottom: 17px;
+  }
+
+  .astoria {
+    background-image: url(../img/astoria-mobile.png);
+  }
+
+  .elain {
+    background-image: url(../img/elain-mobile.png);
+  }
+
+  .atlantis {
+    background-image: url(../img/atlantis-mobile.png);
+  }
+
+  .odissey {
+    background-image: url(../img/odissey-mobile.png);
+  }
+
+  .olimpia {
+    background-image: url(../img/olimpia-mobile.png);
+  }
+
+  .avrora {
+    background-image: url(../img/avrora-mobile.png);
+  }
+
+  .leonor {
+    background-image: url(../img/leonor-mobile.png);
+  }
+
+  .minion {
+    background-image: url(../img/minion-mobile.png);
   }
 }
 

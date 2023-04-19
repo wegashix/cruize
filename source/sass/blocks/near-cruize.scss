@@ -1,0 +1,303 @@
+.near-cruize {
+  padding: 57px 0;
+
+  @include vp-1023 {
+    padding: 64px 0;
+  }
+
+  @include vp-767 {
+    padding-top: 32px;
+  }
+}
+
+.near-cruize__cards {
+  margin: 0 auto;
+  max-width: 1130px;
+  width: 100%;
+  padding: 21px 0;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+
+  @include vp-1223 {
+    grid-template-columns: repeat(3, 1fr);
+
+  }
+
+  @include vp-1023 {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 23px 36px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px 0;
+  }
+}
+
+.near-cruize__card {
+  position: relative;
+  max-width: 260px;
+  width: 100%;
+  min-height: 386px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  cursor: pointer;
+  padding: 28px 25px;
+  padding-bottom: 10px;
+  background: $color-dark-blue;
+  box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+
+  @include vp-1223 {
+    margin: 0 auto;
+  }
+
+  @include vp-1023 {
+    max-width: 309px;
+  }
+
+  @include vp-767 {
+    max-width: 270px;
+  }
+}
+
+.near-cruize h3 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  color: $color-dark-blue;
+
+  @include vp-1023 {
+    font-size: 26px;
+  }
+
+  @include vp-767 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}
+
+.near__cruize-desc {
+  transition: opacity, 0.8s;
+  opacity: 0;
+
+  @include vp-1023 {
+    padding: 0 10px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
+.near-cruize__bg {
+  transition: opacity, 0.8s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+
+  @include vp-1023 {
+    object-fit: cover;
+    background-size: contain;
+  }
+
+
+}
+
+.near__cruize-desc h4 {
+  margin-bottom: 12px;
+  margin-top: 0;
+  margin-left: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: $color-white-bg;
+}
+
+.near-cruize__bg h4 {
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 22px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: $color-white-bg;
+
+  @include vp-1023 {
+    margin-left: 35px;
+    margin-bottom: 27px;
+  }
+
+  @include vp-767 {
+    margin-left: 25px;
+    margin-bottom: 17px;
+  }
+}
+
+.near__cruize-desc span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  color: $color-white-bg;
+  margin-bottom: 0;
+}
+
+.near__cruize-desc p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: $color-white-bg;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.near__cruize-desc a {
+  display: block;
+  text-align: center;
+  margin-top: 26px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  color: $color-dark-blue;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  border: none;
+  background-color: #F9FBFD;
+  min-width: 210px;
+  width: 100%;
+  padding: 10px;
+  transition: opacity, 0.8s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  @include vp-1023 {
+    font-size: 14px;
+  }
+}
+
+.near-cruize__card {
+  &:hover>.near__cruize-desc {
+    opacity: 1;
+  }
+
+  &:hover>.near-cruize__bg {
+    opacity: 0;
+  }
+
+  &:focus-within>.near__cruize-desc {
+    opacity: 1;
+  }
+
+  &:focus-within>.near-cruize__bg {
+    opacity: 0;
+  }
+}
+
+.astoria {
+  background-image: url(../img/astoria.png);
+
+  @media (max-width: 1023px) {
+    background-image: url(../img/astoria-tablet.png);
+  }
+
+  @media (max-width: 767px) {
+    background-image: url(../img/astoria-mobile.png);
+  }
+}
+
+.elain {
+  background-image: url(../img/elain.png);
+
+  @media (max-width: 1023px) {
+    background-image: url(../img/elain-tablet.png);
+  }
+
+  @media (max-width: 767px) {
+    background-image: url(../img/elain-mobile.png);
+  }
+}
+
+.atlantis {
+  background-image: url(../img/atlantis.png);
+
+  @media (max-width: 1023px) {
+    background-image: url(../img/atlantis-tablet.png);
+  }
+
+  @media (max-width: 767px) {
+    background-image: url(../img/atlantis-mobile.png);
+  }
+}
+
+.odissey {
+  background-image: url(../img/odissey.png);
+
+  @media (max-width: 1023px) {
+    background-image: url(../img/odissey-tablet.png);
+  }
+
+  @media (max-width: 767px) {
+    background-image: url(../img/odissey-mobile.png);
+  }
+}
+
+.olimpia {
+  background-image: url(../img/olimpia.png);
+
+  @media (max-width: 1023px) {
+    background-image: url(../img/olimpia-tablet.png);
+  }
+
+  @media (max-width: 767px) {
+    background-image: url(../img/olimpia-mobile.png);
+  }
+}
+
+.avrora {
+  background-image: url(../img/avrora.png);
+
+  @media (max-width: 1023px) {
+    background-image: url(../img/avrora-tablet.png);
+  }
+
+  @media (max-width: 767px) {
+    background-image: url(../img/avrora-mobile.png);
+  }
+}
+
+.leonor {
+  background-image: url(../img/leonor.png);
+
+  @media (max-width: 1023px) {
+    background-image: url(../img/leonor-tablet.png);
+  }
+
+  @media (max-width: 767px) {
+    background-image: url(../img/leonor-mobile.png);
+  }
+}
+
+.minion {
+  background-image: url(../img/minion.png);
+
+  @media (max-width: 1023px) {
+    background-image: url(../img/minion-tablet.png);
+  }
+
+  @media (max-width: 767px) {
+    background-image: url(../img/minion-mobile.png);
+  }
+}
