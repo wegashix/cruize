@@ -1,12 +1,16 @@
 .near-cruize {
   padding: 57px 0;
+  margin-bottom: 42px;
 
   @include vp-1023 {
     padding: 64px 0;
+    margin-bottom: 13px;
   }
 
   @include vp-767 {
     padding-top: 32px;
+    margin-bottom: 0;
+    padding-bottom: 45px;
   }
 }
 
@@ -207,97 +211,97 @@
 }
 
 .astoria {
-  background-image: url(../img/astoria.png);
+  background-image: image-set("../img/cruizes/astoria.png" 1x, "../img/cruizes/astoria@2x.png" 2x);
 
   @media (max-width: 1023px) {
-    background-image: url(../img/astoria-tablet.png);
+    background-image: image-set("../img/cruizes/astoria-tablet.png" 1x, "../img/cruizes/astoria-tablet@2x.png" 2x);
   }
 
   @media (max-width: 767px) {
-    background-image: url(../img/astoria-mobile.png);
+    background-image: image-set("../img/cruizes/astoria-mobile.png" 1x, "../img/cruizes/astoria-mobile@2x.png" 2x);
   }
 }
 
 .elain {
-  background-image: url(../img/elain.png);
+  background-image: image-set("../img/cruizes/elain.png" 1x, "../img/cruizes/elain@2x.png" 2x);
 
   @media (max-width: 1023px) {
-    background-image: url(../img/elain-tablet.png);
+    background-image: image-set("../img/cruizes/elain-tablet.png" 1x, "../img/cruizes/elain-tablet@2x.png" 2x);
   }
 
   @media (max-width: 767px) {
-    background-image: url(../img/elain-mobile.png);
+    background-image: image-set("../img/cruizes/elain-mobile.png" 1x, "../img/cruizes/elain-mobile@2x.png" 2x);
   }
 }
 
 .atlantis {
-  background-image: url(../img/atlantis.png);
+  background-image: image-set("../img/cruizes/atlantis.png" 1x, "../img/cruizes/atlantis@2x.png" 2x);
 
   @media (max-width: 1023px) {
-    background-image: url(../img/atlantis-tablet.png);
+    background-image: image-set("../img/cruizes/atlantis-tablet.png" 1x, "../img/cruizes/atlantis-tablet@2x.png" 2x);
   }
 
   @media (max-width: 767px) {
-    background-image: url(../img/atlantis-mobile.png);
+    background-image: image-set("../img/cruizes/atlantis-mobile.png" 1x, "../img/cruizes/atlantis-mobile@2x.png" 2x);
   }
 }
 
 .odissey {
-  background-image: url(../img/odissey.png);
+  background-image: image-set("../img/cruizes/odissey.png" 1x, "../img/cruizes/odissey@2x.png" 2x);
 
   @media (max-width: 1023px) {
-    background-image: url(../img/odissey-tablet.png);
+    background-image: image-set("../img/cruizes/odissey-tablet.png" 1x, "../img/cruizes/odissey-tablet@2x.png" 2x);
   }
 
   @media (max-width: 767px) {
-    background-image: url(../img/odissey-mobile.png);
+    background-image: image-set("../img/cruizes/odissey-mobile.png" 1x, "../img/cruizes/odissey-mobile@2x.png" 2x);
   }
 }
 
 .olimpia {
-  background-image: url(../img/olimpia.png);
+  background-image: image-set("../img/cruizes/olimpia.png" 1x, "../img/cruizes/olimpia@2x.png" 2x);
 
   @media (max-width: 1023px) {
-    background-image: url(../img/olimpia-tablet.png);
+    background-image: image-set("../img/cruizes/olimpia-tablet.png" 1x, "../img/cruizes/olimpia-tablet@2x.png" 2x);
   }
 
   @media (max-width: 767px) {
-    background-image: url(../img/olimpia-mobile.png);
+    background-image: image-set("../img/cruizes/olimpia-mobile.png" 1x, "../img/cruizes/olimpia-mobile@2x.png" 2x);
   }
 }
 
 .avrora {
-  background-image: url(../img/avrora.png);
+  background-image: image-set("../img/cruizes/avrora.png" 1x, "../img/cruizes/avrora@2x.png" 2x);
 
   @media (max-width: 1023px) {
-    background-image: url(../img/avrora-tablet.png);
+    background-image: image-set("../img/cruizes/avrora-tablet.png" 1x, "../img/cruizes/avrora-tablet@2x.png" 2x);
   }
 
   @media (max-width: 767px) {
-    background-image: url(../img/avrora-mobile.png);
+    background-image: image-set("../img/cruizes/avrora-mobile.png" 1x, "../img/cruizes/avrora-mobile@2x.png" 2x);
   }
 }
 
 .leonor {
-  background-image: url(../img/leonor.png);
+  background-image: image-set("../img/cruizes/leonor.png" 1x, "../img/cruizes/leonor@2x.png" 2x);
 
   @media (max-width: 1023px) {
-    background-image: url(../img/leonor-tablet.png);
+    background-image: image-set("../img/cruizes/leonor-tablet.png" 1x, "../img/cruizes/leonor-tablet@2x.png" 2x);
   }
 
   @media (max-width: 767px) {
-    background-image: url(../img/leonor-mobile.png);
+    background-image: image-set("../img/cruizes/leonor-mobile.png" 1x, "../img/cruizes/leonor-mobile@2x.png" 2x);
   }
 }
 
 .minion {
-  background-image: url(../img/minion.png);
+  background-image: image-set("../img/cruizes/minion.png" 1x, "../img/cruizes/minion@2x.png" 2x);
 
   @media (max-width: 1023px) {
-    background-image: url(../img/minion-tablet.png);
+    background-image: image-set("../img/cruizes/minion-tablet.png" 1x, "../img/cruizes/minion-tablet@2x.png" 2x);
   }
 
   @media (max-width: 767px) {
-    background-image: url(../img/minion-mobile.png);
+    background-image: image-set("../img/cruizes/minion-mobile.png" 1x, "../img/cruizes/minion-mobile@2x.png" 2x);
   }
 }

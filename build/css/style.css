@@ -1322,7 +1322,6 @@ button,
 
 .header-wrapper {
   position: relative;
-  overflow-x: hidden;
 }
 
 .nav {
@@ -1448,6 +1447,10 @@ button,
 
 .nav-br {
   display: none;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .article {
@@ -1580,7 +1583,7 @@ button,
   display: flex;
   max-width: 1160px;
   margin: 0 auto;
-  padding: 112px 0 145px;
+  padding: 120px 0 145px;
 }
 
 .traveling__description {
@@ -1668,6 +1671,7 @@ button,
 
 .near-cruize {
   padding: 57px 0;
+  margin-bottom: 42px;
 }
 
 .near-cruize__cards {
@@ -1826,35 +1830,214 @@ button,
 }
 
 .astoria {
-  background-image: url(../img/astoria.png);
+  background-image: -webkit-image-set(url("../img/cruizes/astoria.png") 1x, url("../img/cruizes/astoria@2x.png") 2x);
+  background-image: image-set("../img/cruizes/astoria.png" 1x, "../img/cruizes/astoria@2x.png" 2x);
 }
 
 .elain {
-  background-image: url(../img/elain.png);
+  background-image: -webkit-image-set(url("../img/cruizes/elain.png") 1x, url("../img/cruizes/elain@2x.png") 2x);
+  background-image: image-set("../img/cruizes/elain.png" 1x, "../img/cruizes/elain@2x.png" 2x);
 }
 
 .atlantis {
-  background-image: url(../img/atlantis.png);
+  background-image: -webkit-image-set(url("../img/cruizes/atlantis.png") 1x, url("../img/cruizes/atlantis@2x.png") 2x);
+  background-image: image-set("../img/cruizes/atlantis.png" 1x, "../img/cruizes/atlantis@2x.png" 2x);
 }
 
 .odissey {
-  background-image: url(../img/odissey.png);
+  background-image: -webkit-image-set(url("../img/cruizes/odissey.png") 1x, url("../img/cruizes/odissey@2x.png") 2x);
+  background-image: image-set("../img/cruizes/odissey.png" 1x, "../img/cruizes/odissey@2x.png" 2x);
 }
 
 .olimpia {
-  background-image: url(../img/olimpia.png);
+  background-image: -webkit-image-set(url("../img/cruizes/olimpia.png") 1x, url("../img/cruizes/olimpia@2x.png") 2x);
+  background-image: image-set("../img/cruizes/olimpia.png" 1x, "../img/cruizes/olimpia@2x.png" 2x);
 }
 
 .avrora {
-  background-image: url(../img/avrora.png);
+  background-image: -webkit-image-set(url("../img/cruizes/avrora.png") 1x, url("../img/cruizes/avrora@2x.png") 2x);
+  background-image: image-set("../img/cruizes/avrora.png" 1x, "../img/cruizes/avrora@2x.png" 2x);
 }
 
 .leonor {
-  background-image: url(../img/leonor.png);
+  background-image: -webkit-image-set(url("../img/cruizes/leonor.png") 1x, url("../img/cruizes/leonor@2x.png") 2x);
+  background-image: image-set("../img/cruizes/leonor.png" 1x, "../img/cruizes/leonor@2x.png" 2x);
 }
 
 .minion {
-  background-image: url(../img/minion.png);
+  background-image: -webkit-image-set(url("../img/cruizes/minion.png") 1x, url("../img/cruizes/minion@2x.png") 2x);
+  background-image: image-set("../img/cruizes/minion.png" 1x, "../img/cruizes/minion@2x.png" 2x);
+}
+
+.reservation {
+  background-image: -webkit-image-set(url("../img/form-bg.png") 1x, url("../img/form-bg@2x.png") 2x);
+  background-image: image-set("../img/form-bg.png" 1x, "../img/form-bg@2x.png" 2x);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.reservation__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px 131px;
+  max-width: 1366px;
+  margin: 0 auto;
+  min-height: 555px;
+}
+
+.reservation__desc {
+  max-width: 495px;
+}
+
+.reservation__desc h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  color: #011C40;
+  margin-bottom: 7px;
+  margin-top: 10px;
+}
+
+.reservation__desc p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #011C40;
+  margin-top: 0;
+}
+
+.reservation__form form {
+  padding: 44px 50px;
+  background: #011C40;
+  -webkit-box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  max-width: 403px;
+  min-height: 455px;
+  margin-left: 30px;
+  margin-top: 0;
+}
+
+.reservation__form form legend {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #F9FBFD;
+  margin-bottom: 27px;
+}
+
+.reservation__form input {
+  background-color: #F9FBFD;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.reservation__form input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.reservation__form input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.reservation__form input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.reservation__form input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.reservation__form input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.form__submit label {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 130%;
+  color: #F9FBFD;
+  margin-left: 23px;
+}
+
+.form__submit button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  color: #011C40;
+  width: 100%;
+  text-align: center;
+  padding: 11px;
+  margin-top: 23px;
+  margin-bottom: 0;
+}
+
+.form__submit label {
+  position: relative;
+}
+
+.form__submit label::before {
+  position: absolute;
+  top: -5px;
+  left: -23px;
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-color: #F9FBFD;
+}
+
+.form__submit label::after {
+  position: absolute;
+  top: -3px;
+  left: -18px;
+  display: block;
+  width: 8px;
+  height: 10px;
+  border-top: 2px solid #011C40;
+  border-left: 2px solid #011C40;
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.form__submit input:focus-visible ~ label::before {
+  border: 2px solid black;
+}
+
+.form__submit input:checked ~ label::after {
+  content: "";
+}
+
+.input-message {
+  color: #F9FBFD;
 }
 
 /* @mixin hover-focus {
@@ -1912,6 +2095,10 @@ button,
 
   .near-cruize__card {
     margin: 0 auto;
+  }
+
+  .reservation__wrapper {
+    padding: 20px 40px;
   }
 }
 
@@ -2036,6 +2223,7 @@ button,
 
   .near-cruize {
     padding: 64px 0;
+    margin-bottom: 13px;
   }
 
   .near-cruize__cards {
@@ -2072,35 +2260,79 @@ button,
   }
 
   .astoria {
-    background-image: url(../img/astoria-tablet.png);
+    background-image: -webkit-image-set(url("../img/cruizes/astoria-tablet.png") 1x, url("../img/cruizes/astoria-tablet@2x.png") 2x);
+    background-image: image-set("../img/cruizes/astoria-tablet.png" 1x, "../img/cruizes/astoria-tablet@2x.png" 2x);
   }
 
   .elain {
-    background-image: url(../img/elain-tablet.png);
+    background-image: -webkit-image-set(url("../img/cruizes/elain-tablet.png") 1x, url("../img/cruizes/elain-tablet@2x.png") 2x);
+    background-image: image-set("../img/cruizes/elain-tablet.png" 1x, "../img/cruizes/elain-tablet@2x.png" 2x);
   }
 
   .atlantis {
-    background-image: url(../img/atlantis-tablet.png);
+    background-image: -webkit-image-set(url("../img/cruizes/atlantis-tablet.png") 1x, url("../img/cruizes/atlantis-tablet@2x.png") 2x);
+    background-image: image-set("../img/cruizes/atlantis-tablet.png" 1x, "../img/cruizes/atlantis-tablet@2x.png" 2x);
   }
 
   .odissey {
-    background-image: url(../img/odissey-tablet.png);
+    background-image: -webkit-image-set(url("../img/cruizes/odissey-tablet.png") 1x, url("../img/cruizes/odissey-tablet@2x.png") 2x);
+    background-image: image-set("../img/cruizes/odissey-tablet.png" 1x, "../img/cruizes/odissey-tablet@2x.png" 2x);
   }
 
   .olimpia {
-    background-image: url(../img/olimpia-tablet.png);
+    background-image: -webkit-image-set(url("../img/cruizes/olimpia-tablet.png") 1x, url("../img/cruizes/olimpia-tablet@2x.png") 2x);
+    background-image: image-set("../img/cruizes/olimpia-tablet.png" 1x, "../img/cruizes/olimpia-tablet@2x.png" 2x);
   }
 
   .avrora {
-    background-image: url(../img/avrora-tablet.png);
+    background-image: -webkit-image-set(url("../img/cruizes/avrora-tablet.png") 1x, url("../img/cruizes/avrora-tablet@2x.png") 2x);
+    background-image: image-set("../img/cruizes/avrora-tablet.png" 1x, "../img/cruizes/avrora-tablet@2x.png" 2x);
   }
 
   .leonor {
-    background-image: url(../img/leonor-tablet.png);
+    background-image: -webkit-image-set(url("../img/cruizes/leonor-tablet.png") 1x, url("../img/cruizes/leonor-tablet@2x.png") 2x);
+    background-image: image-set("../img/cruizes/leonor-tablet.png" 1x, "../img/cruizes/leonor-tablet@2x.png" 2x);
   }
 
   .minion {
-    background-image: url(../img/minion-tablet.png);
+    background-image: -webkit-image-set(url("../img/cruizes/minion-tablet.png") 1x, url("../img/cruizes/minion-tablet@2x.png") 2x);
+    background-image: image-set("../img/cruizes/minion-tablet.png" 1x, "../img/cruizes/minion-tablet@2x.png" 2x);
+  }
+
+  .reservation {
+    background-image: -webkit-image-set(url("../img/form-bg-tablet.png") 1x, url("../img/form-bg-tablet@2x.png") 2x);
+    background-image: image-set("../img/form-bg-tablet.png" 1x, "../img/form-bg-tablet@2x.png" 2x);
+  }
+
+  .reservation__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 78px 0 100px;
+  }
+
+  .reservation__desc h3 {
+    font-size: 34px;
+    line-height: 150%;
+    text-align: center;
+  }
+
+  .reservation__desc p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 150%;
+    max-width: 390px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .reservation__form form {
+    margin-left: 0;
   }
 }
 
@@ -2333,6 +2565,8 @@ button,
 
   .near-cruize {
     padding-top: 32px;
+    margin-bottom: 0;
+    padding-bottom: 45px;
   }
 
   .near-cruize__cards {
@@ -2360,35 +2594,93 @@ button,
   }
 
   .astoria {
-    background-image: url(../img/astoria-mobile.png);
+    background-image: -webkit-image-set(url("../img/cruizes/astoria-mobile.png") 1x, url("../img/cruizes/astoria-mobile@2x.png") 2x);
+    background-image: image-set("../img/cruizes/astoria-mobile.png" 1x, "../img/cruizes/astoria-mobile@2x.png" 2x);
   }
 
   .elain {
-    background-image: url(../img/elain-mobile.png);
+    background-image: -webkit-image-set(url("../img/cruizes/elain-mobile.png") 1x, url("../img/cruizes/elain-mobile@2x.png") 2x);
+    background-image: image-set("../img/cruizes/elain-mobile.png" 1x, "../img/cruizes/elain-mobile@2x.png" 2x);
   }
 
   .atlantis {
-    background-image: url(../img/atlantis-mobile.png);
+    background-image: -webkit-image-set(url("../img/cruizes/atlantis-mobile.png") 1x, url("../img/cruizes/atlantis-mobile@2x.png") 2x);
+    background-image: image-set("../img/cruizes/atlantis-mobile.png" 1x, "../img/cruizes/atlantis-mobile@2x.png" 2x);
   }
 
   .odissey {
-    background-image: url(../img/odissey-mobile.png);
+    background-image: -webkit-image-set(url("../img/cruizes/odissey-mobile.png") 1x, url("../img/cruizes/odissey-mobile@2x.png") 2x);
+    background-image: image-set("../img/cruizes/odissey-mobile.png" 1x, "../img/cruizes/odissey-mobile@2x.png" 2x);
   }
 
   .olimpia {
-    background-image: url(../img/olimpia-mobile.png);
+    background-image: -webkit-image-set(url("../img/cruizes/olimpia-mobile.png") 1x, url("../img/cruizes/olimpia-mobile@2x.png") 2x);
+    background-image: image-set("../img/cruizes/olimpia-mobile.png" 1x, "../img/cruizes/olimpia-mobile@2x.png" 2x);
   }
 
   .avrora {
-    background-image: url(../img/avrora-mobile.png);
+    background-image: -webkit-image-set(url("../img/cruizes/avrora-mobile.png") 1x, url("../img/cruizes/avrora-mobile@2x.png") 2x);
+    background-image: image-set("../img/cruizes/avrora-mobile.png" 1x, "../img/cruizes/avrora-mobile@2x.png" 2x);
   }
 
   .leonor {
-    background-image: url(../img/leonor-mobile.png);
+    background-image: -webkit-image-set(url("../img/cruizes/leonor-mobile.png") 1x, url("../img/cruizes/leonor-mobile@2x.png") 2x);
+    background-image: image-set("../img/cruizes/leonor-mobile.png" 1x, "../img/cruizes/leonor-mobile@2x.png" 2x);
   }
 
   .minion {
-    background-image: url(../img/minion-mobile.png);
+    background-image: -webkit-image-set(url("../img/cruizes/minion-mobile.png") 1x, url("../img/cruizes/minion-mobile@2x.png") 2x);
+    background-image: image-set("../img/cruizes/minion-mobile.png" 1x, "../img/cruizes/minion-mobile@2x.png" 2x);
+  }
+
+  .reservation__wrapper {
+    padding-top: 50px;
+    padding-bottom: 68px;
+  }
+
+  .reservation__desc h3 {
+    font-size: 24px;
+    line-height: 130%;
+    margin-bottom: 12px;
+  }
+
+  .reservation__desc p {
+    font-size: 16px;
+    line-height: 140%;
+    max-width: 275px;
+    margin-bottom: 33px;
+  }
+
+  .reservation__form form {
+    padding: 36px 30px;
+  }
+
+  .reservation__form form legend {
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+  }
+
+  .form__submit label {
+    font-size: 10px;
+    line-height: 120%;
+    margin-left: 26px;
+    display: block;
+  }
+
+  .form__submit button {
+    margin-top: 27px;
+    padding: 10px;
+  }
+
+  .form__submit label::before {
+    top: 3px;
+    left: -26px;
+  }
+
+  .form__submit label::after {
+    top: 5px;
+    left: -20px;
   }
 }
 

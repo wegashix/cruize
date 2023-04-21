@@ -21,7 +21,6 @@
 
 .header-wrapper {
   position: relative;
-  overflow-x: hidden;
 }
 
 .nav {
@@ -59,7 +58,8 @@
     margin-left: -3px;
   }
 
-  transition: opacity, 0.5s;
+  transition: opacity,
+  0.5s;
 
   &:hover {
     opacity: 0.8;
@@ -225,4 +225,8 @@
   @include vp-767 {
     display: block;
   }
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }

@@ -344,6 +344,78 @@
 
       </section>
 
+      <section class="reservation">
+        <div class="container">
+
+          <div class="reservation__wrapper">
+
+            <div class="reservation__desc">
+              <h3>Раннее бронирование</h3>
+              <p>Забронируйте тур за 3-6 месяцев
+                до даты выезда и сэкономьте до 50%</p>
+            </div>
+
+            <div class="reservation__form" id="reservation__form" data-form-validate data-callback="base">
+
+              <form id="form" action="https://echo.htmlacademy.ru/" method="post">
+                <legend>Оставьте заявку и мы свяжемся с вами в ближайшее время</legend>
+
+
+                <div class="form-user-name is-valid is-invalid" data-validate-type="text" data-limitation="name"
+                  data-message-base="Поле обязательно к заполнению"
+                  data-message-extra="Проверьте корректность заполнения поля" data-required>
+
+                  <label class="visually-hidden" for="user-name"></label>
+                  <input type="text" placeholder="Имя" id="user-name" required>
+
+                </div>
+
+                <div class="form-user-phone" data-validate-type="phone" data-on-input-validate
+                  data-message-base="Поле обязательно к заполнению"
+                  data-message-extra="Проверьте корректность заполнения поля"
+                  data-message-success="Поле заполнено верно" data-required>
+
+                  <label class="visually-hidden" for="user-phone"></label>
+                  <input type="tel" name="phone" id="user-phone" placeholder="Телефон" required aria-label="tel input">
+
+                </div>
+
+                <div class="form-user-email" data-validate-type="email" data-on-input-validate
+                  data-message-base="Поле обязательно к заполнению"
+                  data-message-extra="Проверьте корректность заполнения поля"
+                  data-message-success="Поле заполнено верно" data-required>
+
+                  <label class="visually-hidden" for="user-email"></label>
+                  <input type="email" name="email" id="user-email" placeholder="email" required
+                    aria-label="email input">
+
+                </div>
+
+                <div class="form__submit">
+
+                  <div class="form-checkbox" data-required data-on-input-validate data-validate-type="checkbox"
+                    data-message-base="Необходимо ваше согласие">
+
+
+                    <input type="checkbox" name="agree" id="checkbox" value="agree" required aria-required="true"
+                      aria-invalid="false" class="visually-hidden">
+                    <label for="checkbox">Я согласен на обработку моих персональных данных</label>
+                    <span></span>
+
+                    <button type="submit">Оставить заявку</button>
+
+                  </div>
+
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
   </div>
   </main>
   <footer class="footer">
