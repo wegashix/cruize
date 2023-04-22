@@ -2040,6 +2040,59 @@ button,
   color: #F9FBFD;
 }
 
+.section__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.location {
+  max-width: 1366px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 120px 71px;
+}
+
+.section__desc h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #011C40;
+  margin-bottom: 33px;
+  margin-top: 19px;
+}
+
+.section__desc ul {
+  padding-left: 28px;
+}
+
+.section__desc li {
+  list-style: none;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.section__desc a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #011C40;
+}
+
+.section__desc img {
+  position: absolute;
+  top: 1px;
+  left: -28px;
+}
+
+.map {
+  position: relative;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -2099,6 +2152,14 @@ button,
 
   .reservation__wrapper {
     padding: 20px 40px;
+  }
+
+  .section__wrapper {
+    gap: 30px;
+  }
+
+  .location {
+    padding: 100px 20px;
   }
 }
 
@@ -2333,6 +2394,23 @@ button,
 
   .reservation__form form {
     margin-left: 0;
+  }
+
+  .location {
+    padding: 100px 20px 130px;
+  }
+
+  .section__desc h4 {
+    margin-top: 47px;
+  }
+
+  .section__desc ul {
+    margin-top: -5px;
+  }
+
+  .map iframe {
+    width: 324px;
+    height: 335px;
   }
 }
 
@@ -2681,6 +2759,33 @@ button,
   .form__submit label::after {
     top: 5px;
     left: -20px;
+  }
+
+  .section__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    gap: 15px;
+  }
+
+  .location {
+    padding: 58px 0 76px;
+  }
+
+  .section__desc h4 {
+    text-align: start;
+    margin-top: 0;
+  }
+
+  .map iframe {
+    width: 290px;
+    height: 316px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
   }
 }
 
