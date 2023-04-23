@@ -1,4 +1,4 @@
-.section__wrapper {
+.location__wrapper {
   display: flex;
   align-items: center;
   gap: 100px;
@@ -30,16 +30,15 @@
   @include vp-767 {
     padding: 58px 0 76px;
   }
-
 }
 
-.section__desc h4 {
+.location__desc h4 {
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
   color: $color-dark-blue;
   margin-bottom: 33px;
-  margin-top: 19px;
+  margin-top: 18px;
 
   @include vp-1023 {
     margin-top: 47px;
@@ -51,7 +50,7 @@
   }
 }
 
-.section__desc ul {
+.location__desc ul {
   padding-left: 28px;
 
   @include vp-1023 {
@@ -59,26 +58,32 @@
   }
 }
 
-.section__desc li {
+.location__desc li {
   list-style: none;
   position: relative;
   margin-bottom: 20px;
 }
 
-.section__desc a {
+.location__desc a {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   color: $color-dark-blue;
+  transition: color, 0.5s;
+
+  &:hover {
+    color: #808080;
+  }
 }
 
-.section__desc img {
+.location__desc svg {
   position: absolute;
-  top: 1px;
+  top: 2px;
   left: -28px;
 }
 
 .map {
+  background-color: #808080;
   position: relative;
 }
 

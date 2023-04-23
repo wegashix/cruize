@@ -5,7 +5,7 @@
 }
 
 .advantages__wrapper {
-  background-image: url(../img/advantages-desctop@2x.png);
+  background-image: url("../img/advantages-desctop@2x.png");
   width: 100%;
   padding: 82px 71px 120px;
 
@@ -16,7 +16,6 @@
   @include vp-767 {
     padding: 33px 0 65px;
   }
-
 }
 
 .advantages__wrapper h3 {
@@ -55,7 +54,7 @@
 }
 
 .advantages__card {
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
   padding: 30px;
   max-width: 360px;
   width: 100%;
@@ -76,12 +75,16 @@
   font-size: 18px;
   line-height: 150%;
   color: $color-dark-blue;
-  margin-top: 19px;
+  margin-top: 12px;
   margin-bottom: 10px;
 
   @include vp-1023 {
     font-size: 18px;
     line-height: 140%;
+  }
+
+  @include vp-767 {
+    max-width: 200px;
   }
 }
 
@@ -95,7 +98,7 @@
 }
 
 
-.advantages__card img {
+.advantages__card svg {
   @include vp-1023 {
     height: 26px;
     margin-left: -4px;

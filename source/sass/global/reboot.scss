@@ -20,7 +20,7 @@ html {
   line-height: 24px;
   font-family: $ff-placeholder;
   color: $color-default-black;
-
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   // оптимизация выравнивания шрифта относительно центра строки
@@ -84,7 +84,6 @@ select {
 
 // ie11 X removal
 input {
-
   &::-ms-clear,
   &::-ms-reveal {
     display: none;

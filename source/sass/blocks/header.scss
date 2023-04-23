@@ -1,15 +1,27 @@
 .background-header img {
   margin: 0 auto;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 650px;
+  object-fit: cover;
+  box-shadow: 0 4px 4px #00000040;
+
+  @include vp-1023{
+    height: 100%;
+  }
 }
 
 .background-header {
   position: relative;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.background-header picture {
+  background-color: rgba(0, 43, 102, 0.5);
 }
 
 .background-header.active {
   &::before {
-    content: '';
+    content: " ";
     height: 100vh;
     width: 100%;
     background: rgba(0, 43, 102, 0.5);
@@ -38,12 +50,11 @@
     max-width: 726px;
     margin-top: 12px;
   }
-
-
 }
 
 .nav img {
   margin-top: 7px;
+  transition: opacity, 0.5s;
 
   @include vp-1023 {
     width: 38px;
@@ -57,9 +68,6 @@
     margin-top: 8px;
     margin-left: -3px;
   }
-
-  transition: opacity,
-  0.5s;
 
   &:hover {
     opacity: 0.8;
@@ -76,9 +84,14 @@
   background: none;
   z-index: 99;
   padding: 10px;
+  transition: opacity, 0.5s;
 
   @include vp-767 {
     display: flex;
+  }
+
+  &:hover {
+    opacity: 0.8;
   }
 }
 
@@ -140,6 +153,8 @@
 
 .nav__list ul {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
   @include vp-767 {
     visibility: hidden;
@@ -153,6 +168,7 @@
     z-index: 10;
     transform: translateX(100%);
     transition: translate, 0.8s;
+    justify-content: start;
   }
 }
 

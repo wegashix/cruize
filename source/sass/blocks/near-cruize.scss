@@ -25,7 +25,6 @@
 
   @include vp-1223 {
     grid-template-columns: repeat(3, 1fr);
-
   }
 
   @include vp-1023 {
@@ -51,7 +50,7 @@
   padding: 28px 25px;
   padding-bottom: 10px;
   background: $color-dark-blue;
-  box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
 
   @include vp-1223 {
     margin: 0 auto;
@@ -63,6 +62,22 @@
 
   @include vp-767 {
     max-width: 270px;
+  }
+
+  &:hover > .near-cruize__desc {
+    opacity: 1;
+  }
+
+  &:hover > .near-cruize__bg {
+    opacity: 0;
+  }
+
+  &:focus-within > .near-cruize__desc {
+    opacity: 1;
+  }
+
+  &:focus-within > .near-cruize__bg {
+    opacity: 0;
   }
 }
 
@@ -83,7 +98,7 @@
   }
 }
 
-.near__cruize-desc {
+.near-cruize__desc {
   transition: opacity, 0.8s;
   opacity: 0;
 
@@ -115,11 +130,9 @@
     object-fit: cover;
     background-size: contain;
   }
-
-
 }
 
-.near__cruize-desc h4 {
+.near-cruize__desc h4 {
   margin-bottom: 12px;
   margin-top: 0;
   margin-left: 0;
@@ -149,7 +162,7 @@
   }
 }
 
-.near__cruize-desc span {
+.near-cruize__desc span {
   font-weight: 500;
   font-size: 14px;
   line-height: 140%;
@@ -157,7 +170,7 @@
   margin-bottom: 0;
 }
 
-.near__cruize-desc p {
+.near-cruize__desc p {
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
@@ -166,18 +179,18 @@
   margin-bottom: 8px;
 }
 
-.near__cruize-desc a {
+.near-cruize__desc a {
   display: block;
   text-align: center;
   margin-top: 26px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   cursor: pointer;
   color: $color-dark-blue;
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
   border: none;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
   min-width: 210px;
   width: 100%;
   padding: 10px;
@@ -189,24 +202,6 @@
 
   @include vp-1023 {
     font-size: 14px;
-  }
-}
-
-.near-cruize__card {
-  &:hover>.near__cruize-desc {
-    opacity: 1;
-  }
-
-  &:hover>.near-cruize__bg {
-    opacity: 0;
-  }
-
-  &:focus-within>.near__cruize-desc {
-    opacity: 1;
-  }
-
-  &:focus-within>.near-cruize__bg {
-    opacity: 0;
   }
 }
 
