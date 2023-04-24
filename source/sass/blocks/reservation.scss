@@ -202,11 +202,11 @@
 }
 
 .reservation__submit input {
-  &:focus-visible~label::before {
+  &:focus-visible ~ label::before {
     border: 2px solid #000000;
   }
 
-  &:checked~label::after {
+  &:checked ~ label::after {
     content: " ";
   }
 }
