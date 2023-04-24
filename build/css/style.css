@@ -640,6 +640,14 @@ button,
   outline: none;
 }
 
+.input-message {
+  color: #f9fbfd;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   max-width: 1920px;
@@ -1301,23 +1309,26 @@ button,
   color: #15ab07;
 }
 
+.header-wrapper {
+  position: relative;
+}
+
 .background-header img {
   margin: 0 auto;
   height: 650px;
   -o-object-fit: cover;
   object-fit: cover;
+  width: 100%;
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2509803922);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2509803922);
 }
 
 .background-header {
   position: relative;
-  max-width: 1366px;
   margin: 0 auto;
-}
-
-.background-header picture {
-  background-color: rgba(0, 43, 102, 0.5);
+  background-color: #4d8cc4;
+  width: 100%;
+  height: 650px;
 }
 
 .background-header.active::before {
@@ -1328,10 +1339,6 @@ button,
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.header-wrapper {
-  position: relative;
 }
 
 .nav {
@@ -1473,10 +1480,6 @@ button,
   display: none;
 }
 
-.overflow-hidden {
-  overflow: hidden;
-}
-
 .article {
   position: absolute;
   top: 234px;
@@ -1508,7 +1511,7 @@ button,
   background-color: #011c40;
 }
 
-.footer-wrapper {
+.footer__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1520,7 +1523,7 @@ button,
   padding: 36px 0;
 }
 
-.footer-wrapper__list {
+.footer__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1529,7 +1532,7 @@ button,
   align-items: center;
 }
 
-.footer-wrapper__list ul {
+.footer__list ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1545,15 +1548,15 @@ button,
   margin-left: -10px;
 }
 
-.footer-wrapper__list li {
+.footer__list li {
   list-style: none;
 }
 
-.footer-wrapper__list li:not(:first-of-type) {
+.footer__list li:not(:first-of-type) {
   margin-left: 33px;
 }
 
-.footer-wrapper__list li a {
+.footer__list li a {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -1563,22 +1566,22 @@ button,
   transition: opacity, 0.5s;
 }
 
-.footer-wrapper__list li a:hover {
+.footer__list li a:hover {
   opacity: 0.7;
 }
 
-.footer-wrapper__list img {
+.footer__list img {
   -webkit-transition: opacity, 0.5s;
   -o-transition: opacity, 0.5s;
   transition: opacity, 0.5s;
   margin-right: 10px;
 }
 
-.footer-wrapper__list img:hover {
+.footer__list img:hover {
   opacity: 0.7;
 }
 
-.footer-wrapper__list-icons ul {
+.footer__list-icons ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1589,22 +1592,22 @@ button,
   margin-top: 24px;
 }
 
-.footer-wrapper__list-icons ul li {
+.footer__list-icons ul li {
   list-style: none;
   margin-left: 26px;
 }
 
-.footer-wrapper__list-icons ul a {
+.footer__list-icons ul a {
   -webkit-transition: opaity, 0.5s;
   -o-transition: opaity, 0.5s;
   transition: opaity, 0.5s;
 }
 
-.footer-wrapper__list-icons ul a:hover {
+.footer__list-icons ul a:hover {
   opacity: 0.6;
 }
 
-.footer-wrapper__list-icons svg {
+.footer__list-icons svg {
   -webkit-transition: opacity, 0.5s;
   -o-transition: opacity, 0.5s;
   transition: opacity, 0.5s;
@@ -1612,7 +1615,7 @@ button,
   height: 20px;
 }
 
-.footer-wrapper__list-icons svg:hover {
+.footer__list-icons svg:hover {
   opacity: 0.6;
 }
 
@@ -1622,7 +1625,7 @@ button,
   display: flex;
   max-width: 1160px;
   margin: 0 auto;
-  padding: 120px 0 145px;
+  padding: 120px 30px 145px;
 }
 
 .traveling__description {
@@ -1630,13 +1633,16 @@ button,
   width: 100%;
 }
 
-.traveling__img picture {
-  background-color: #808080;
+.traveling__img {
+  background-color: #caddfc;
+  width: 100%;
+  height: 301px;
+  margin-left: 88px;
 }
 
 .traveling img {
-  margin-left: 88px;
-  max-width: inherit;
+  width: 100%;
+  height: 100%;
 }
 
 .traveling h2 {
@@ -1660,9 +1666,9 @@ button,
 }
 
 .advantages {
-  max-width: 1366px;
   width: 100%;
   margin: 0 auto;
+  background-color: #d0ddea;
 }
 
 .advantages__wrapper {
@@ -1685,6 +1691,8 @@ button,
   display: -ms-flexbox;
   display: flex;
   gap: 40px;
+  margin: 0 auto;
+  max-width: 1160px;
 }
 
 .advantages__card {
@@ -1872,42 +1880,42 @@ button,
   opacity: 0.8;
 }
 
-.astoria {
+.near-cruize__bg--astoria {
   background-image: -webkit-image-set(url("../img/cruizes/astoria.png") 1x, url("../img/cruizes/astoria@2x.png") 2x);
   background-image: image-set("../img/cruizes/astoria.png" 1x, "../img/cruizes/astoria@2x.png" 2x);
 }
 
-.elain {
+.near-cruize__bg--elain {
   background-image: -webkit-image-set(url("../img/cruizes/elain.png") 1x, url("../img/cruizes/elain@2x.png") 2x);
   background-image: image-set("../img/cruizes/elain.png" 1x, "../img/cruizes/elain@2x.png" 2x);
 }
 
-.atlantis {
+.near-cruize__bg--atlantis {
   background-image: -webkit-image-set(url("../img/cruizes/atlantis.png") 1x, url("../img/cruizes/atlantis@2x.png") 2x);
   background-image: image-set("../img/cruizes/atlantis.png" 1x, "../img/cruizes/atlantis@2x.png" 2x);
 }
 
-.odissey {
+.near-cruize__bg--odissey {
   background-image: -webkit-image-set(url("../img/cruizes/odissey.png") 1x, url("../img/cruizes/odissey@2x.png") 2x);
   background-image: image-set("../img/cruizes/odissey.png" 1x, "../img/cruizes/odissey@2x.png" 2x);
 }
 
-.olimpia {
+.near-cruize__bg--olimpia {
   background-image: -webkit-image-set(url("../img/cruizes/olimpia.png") 1x, url("../img/cruizes/olimpia@2x.png") 2x);
   background-image: image-set("../img/cruizes/olimpia.png" 1x, "../img/cruizes/olimpia@2x.png" 2x);
 }
 
-.avrora {
+.near-cruize__bg--avrora {
   background-image: -webkit-image-set(url("../img/cruizes/avrora.png") 1x, url("../img/cruizes/avrora@2x.png") 2x);
   background-image: image-set("../img/cruizes/avrora.png" 1x, "../img/cruizes/avrora@2x.png" 2x);
 }
 
-.leonor {
+.near-cruize__bg--leonor {
   background-image: -webkit-image-set(url("../img/cruizes/leonor.png") 1x, url("../img/cruizes/leonor@2x.png") 2x);
   background-image: image-set("../img/cruizes/leonor.png" 1x, "../img/cruizes/leonor@2x.png" 2x);
 }
 
-.minion {
+.near-cruize__bg--minion {
   background-image: -webkit-image-set(url("../img/cruizes/minion.png") 1x, url("../img/cruizes/minion@2x.png") 2x);
   background-image: image-set("../img/cruizes/minion.png" 1x, "../img/cruizes/minion@2x.png" 2x);
 }
@@ -1915,11 +1923,10 @@ button,
 .reservation {
   background-image: -webkit-image-set(url("../img/form-bg.png") 1x, url("../img/form-bg@2x.png") 2x);
   background-image: image-set("../img/form-bg.png" 1x, "../img/form-bg@2x.png" 2x);
+  background-color: #bfe2fb;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1366px;
-  margin: 0 auto;
 }
 
 .reservation__wrapper {
@@ -2078,20 +2085,6 @@ button,
   content: " ";
 }
 
-.input-message {
-  color: #f9fbfd;
-}
-
-.location__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 100px;
-}
-
 .location {
   max-width: 1366px;
   width: 100%;
@@ -2138,9 +2131,20 @@ button,
   left: -28px;
 }
 
+.location__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 100px;
+}
+
 .map {
   background-color: #808080;
   position: relative;
+  width: 560px;
 }
 
 /* @mixin hover-focus {
@@ -2204,12 +2208,12 @@ button,
     padding: 20px 40px;
   }
 
-  .location__wrapper {
-    gap: 30px;
-  }
-
   .location {
     padding: 100px 20px;
+  }
+
+  .location__wrapper {
+    gap: 30px;
   }
 }
 
@@ -2257,33 +2261,33 @@ button,
     line-height: 22px;
   }
 
-  .footer-wrapper {
+  .footer__wrapper {
     padding: 26px 21px;
   }
 
-  .footer-wrapper__list ul {
+  .footer__list ul {
     margin-left: -25px;
   }
 
-  .footer-wrapper__list li:not(:first-of-type) {
+  .footer__list li:not(:first-of-type) {
     margin-left: 23px;
   }
 
-  .footer-wrapper__list li a {
+  .footer__list li a {
     font-size: 12px;
     line-height: 15px;
   }
 
-  .footer-wrapper__list img {
+  .footer__list img {
     width: 38px;
     height: 20px;
   }
 
-  .footer-wrapper__list-icons ul li {
+  .footer__list-icons ul li {
     margin-left: 21px;
   }
 
-  .footer-wrapper__list-icons svg {
+  .footer__list-icons svg {
     width: 16px;
     height: 16px;
   }
@@ -2292,9 +2296,10 @@ button,
     padding: 100px 44px 75px 44px;
   }
 
-  .traveling img {
-    width: 324px;
+  .traveling__img {
     margin-left: 25px;
+    width: 324px;
+    height: 175px;
   }
 
   .traveling h2 {
@@ -2374,42 +2379,42 @@ button,
     font-size: 14px;
   }
 
-  .astoria {
+  .near-cruize__bg--astoria {
     background-image: -webkit-image-set(url("../img/cruizes/astoria-tablet.png") 1x, url("../img/cruizes/astoria-tablet@2x.png") 2x);
     background-image: image-set("../img/cruizes/astoria-tablet.png" 1x, "../img/cruizes/astoria-tablet@2x.png" 2x);
   }
 
-  .elain {
+  .near-cruize__bg--elain {
     background-image: -webkit-image-set(url("../img/cruizes/elain-tablet.png") 1x, url("../img/cruizes/elain-tablet@2x.png") 2x);
     background-image: image-set("../img/cruizes/elain-tablet.png" 1x, "../img/cruizes/elain-tablet@2x.png" 2x);
   }
 
-  .atlantis {
+  .near-cruize__bg--atlantis {
     background-image: -webkit-image-set(url("../img/cruizes/atlantis-tablet.png") 1x, url("../img/cruizes/atlantis-tablet@2x.png") 2x);
     background-image: image-set("../img/cruizes/atlantis-tablet.png" 1x, "../img/cruizes/atlantis-tablet@2x.png" 2x);
   }
 
-  .odissey {
+  .near-cruize__bg--odissey {
     background-image: -webkit-image-set(url("../img/cruizes/odissey-tablet.png") 1x, url("../img/cruizes/odissey-tablet@2x.png") 2x);
     background-image: image-set("../img/cruizes/odissey-tablet.png" 1x, "../img/cruizes/odissey-tablet@2x.png" 2x);
   }
 
-  .olimpia {
+  .near-cruize__bg--olimpia {
     background-image: -webkit-image-set(url("../img/cruizes/olimpia-tablet.png") 1x, url("../img/cruizes/olimpia-tablet@2x.png") 2x);
     background-image: image-set("../img/cruizes/olimpia-tablet.png" 1x, "../img/cruizes/olimpia-tablet@2x.png" 2x);
   }
 
-  .avrora {
+  .near-cruize__bg--avrora {
     background-image: -webkit-image-set(url("../img/cruizes/avrora-tablet.png") 1x, url("../img/cruizes/avrora-tablet@2x.png") 2x);
     background-image: image-set("../img/cruizes/avrora-tablet.png" 1x, "../img/cruizes/avrora-tablet@2x.png" 2x);
   }
 
-  .leonor {
+  .near-cruize__bg--leonor {
     background-image: -webkit-image-set(url("../img/cruizes/leonor-tablet.png") 1x, url("../img/cruizes/leonor-tablet@2x.png") 2x);
     background-image: image-set("../img/cruizes/leonor-tablet.png" 1x, "../img/cruizes/leonor-tablet@2x.png" 2x);
   }
 
-  .minion {
+  .near-cruize__bg--minion {
     background-image: -webkit-image-set(url("../img/cruizes/minion-tablet.png") 1x, url("../img/cruizes/minion-tablet@2x.png") 2x);
     background-image: image-set("../img/cruizes/minion-tablet.png" 1x, "../img/cruizes/minion-tablet@2x.png" 2x);
   }
@@ -2460,6 +2465,11 @@ button,
 
   .location__desc ul {
     margin-top: -5px;
+  }
+
+  .map {
+    width: 324px;
+    height: 335px;
   }
 
   .map iframe {
@@ -2596,7 +2606,7 @@ button,
     line-height: 136%;
   }
 
-  .footer-wrapper {
+  .footer__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2605,7 +2615,7 @@ button,
     padding-top: 41px;
   }
 
-  .footer-wrapper__list {
+  .footer__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2615,7 +2625,7 @@ button,
     align-items: start;
   }
 
-  .footer-wrapper__list ul {
+  .footer__list ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2627,26 +2637,26 @@ button,
     margin-left: 0;
   }
 
-  .footer-wrapper__list li {
+  .footer__list li {
     margin-top: 2px;
     margin-bottom: 6px;
   }
 
-  .footer-wrapper__list li:not(:first-of-type) {
+  .footer__list li:not(:first-of-type) {
     margin-left: 0;
   }
 
-  .footer-wrapper__list img {
+  .footer__list img {
     margin-bottom: 23px;
   }
 
-  .footer-wrapper__list-icons ul {
+  .footer__list-icons ul {
     margin-left: -4px;
     margin-top: 15px;
     margin-bottom: 32px;
   }
 
-  .footer-wrapper__list-icons ul li {
+  .footer__list-icons ul li {
     margin-left: 0;
     margin-right: 21px;
   }
@@ -2659,7 +2669,7 @@ button,
     padding: 20px 15px 84px;
   }
 
-  .traveling img {
+  .traveling__img {
     margin: 0 auto;
     width: 290px;
     height: 156px;
@@ -2736,42 +2746,42 @@ button,
     margin-bottom: 17px;
   }
 
-  .astoria {
+  .near-cruize__bg--astoria {
     background-image: -webkit-image-set(url("../img/cruizes/astoria-mobile.png") 1x, url("../img/cruizes/astoria-mobile@2x.png") 2x);
     background-image: image-set("../img/cruizes/astoria-mobile.png" 1x, "../img/cruizes/astoria-mobile@2x.png" 2x);
   }
 
-  .elain {
+  .near-cruize__bg--elain {
     background-image: -webkit-image-set(url("../img/cruizes/elain-mobile.png") 1x, url("../img/cruizes/elain-mobile@2x.png") 2x);
     background-image: image-set("../img/cruizes/elain-mobile.png" 1x, "../img/cruizes/elain-mobile@2x.png" 2x);
   }
 
-  .atlantis {
+  .near-cruize__bg--atlantis {
     background-image: -webkit-image-set(url("../img/cruizes/atlantis-mobile.png") 1x, url("../img/cruizes/atlantis-mobile@2x.png") 2x);
     background-image: image-set("../img/cruizes/atlantis-mobile.png" 1x, "../img/cruizes/atlantis-mobile@2x.png" 2x);
   }
 
-  .odissey {
+  .near-cruize__bg--odissey {
     background-image: -webkit-image-set(url("../img/cruizes/odissey-mobile.png") 1x, url("../img/cruizes/odissey-mobile@2x.png") 2x);
     background-image: image-set("../img/cruizes/odissey-mobile.png" 1x, "../img/cruizes/odissey-mobile@2x.png" 2x);
   }
 
-  .olimpia {
+  .near-cruize__bg--olimpia {
     background-image: -webkit-image-set(url("../img/cruizes/olimpia-mobile.png") 1x, url("../img/cruizes/olimpia-mobile@2x.png") 2x);
     background-image: image-set("../img/cruizes/olimpia-mobile.png" 1x, "../img/cruizes/olimpia-mobile@2x.png" 2x);
   }
 
-  .avrora {
+  .near-cruize__bg--avrora {
     background-image: -webkit-image-set(url("../img/cruizes/avrora-mobile.png") 1x, url("../img/cruizes/avrora-mobile@2x.png") 2x);
     background-image: image-set("../img/cruizes/avrora-mobile.png" 1x, "../img/cruizes/avrora-mobile@2x.png" 2x);
   }
 
-  .leonor {
+  .near-cruize__bg--leonor {
     background-image: -webkit-image-set(url("../img/cruizes/leonor-mobile.png") 1x, url("../img/cruizes/leonor-mobile@2x.png") 2x);
     background-image: image-set("../img/cruizes/leonor-mobile.png" 1x, "../img/cruizes/leonor-mobile@2x.png" 2x);
   }
 
-  .minion {
+  .near-cruize__bg--minion {
     background-image: -webkit-image-set(url("../img/cruizes/minion-mobile.png") 1x, url("../img/cruizes/minion-mobile@2x.png") 2x);
     background-image: image-set("../img/cruizes/minion-mobile.png" 1x, "../img/cruizes/minion-mobile@2x.png" 2x);
   }
@@ -2826,6 +2836,15 @@ button,
     padding: 10px;
   }
 
+  .location {
+    padding: 58px 0 76px;
+  }
+
+  .location__desc h4 {
+    text-align: start;
+    margin-top: 0;
+  }
+
   .location__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -2834,13 +2853,14 @@ button,
     gap: 15px;
   }
 
-  .location {
-    padding: 58px 0 76px;
-  }
-
-  .location__desc h4 {
-    text-align: start;
-    margin-top: 0;
+  .map {
+    width: 290px;
+    height: 316px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
   }
 
   .map iframe {

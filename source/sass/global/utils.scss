@@ -69,3 +69,11 @@
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
+
+.input-message {
+  color: $color-white-bg;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}

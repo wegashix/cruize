@@ -2,7 +2,7 @@
   background-color: $color-dark-blue;
 }
 
-.footer-wrapper {
+.footer__wrapper {
   display: flex;
   justify-content: space-between;
   max-width: 1160px;
@@ -20,7 +20,7 @@
   }
 }
 
-.footer-wrapper__list {
+.footer__list {
   display: flex;
   align-items: center;
 
@@ -30,7 +30,7 @@
   }
 }
 
-.footer-wrapper__list ul {
+.footer__list ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -51,7 +51,7 @@
   }
 }
 
-.footer-wrapper__list li {
+.footer__list li {
   list-style: none;
 
   @include vp-767 {
@@ -60,7 +60,7 @@
   }
 }
 
-.footer-wrapper__list li:not(:first-of-type) {
+.footer__list li:not(:first-of-type) {
   margin-left: 33px;
 
   @include vp-1023 {
@@ -72,8 +72,7 @@
   }
 }
 
-
-.footer-wrapper__list li a {
+.footer__list li a {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -90,7 +89,7 @@
   }
 }
 
-.footer-wrapper__list img {
+.footer__list img {
   transition: opacity, 0.5s;
   margin-right: 10px;
 
@@ -108,7 +107,7 @@
   }
 }
 
-.footer-wrapper__list-icons ul {
+.footer__list-icons ul {
   display: flex;
   align-items: center;
   padding: 0;
@@ -121,7 +120,7 @@
   }
 }
 
-.footer-wrapper__list-icons ul li {
+.footer__list-icons ul li {
   list-style: none;
   margin-left: 26px;
 
@@ -136,7 +135,7 @@
   }
 }
 
-.footer-wrapper__list-icons ul a {
+.footer__list-icons ul a {
   transition: opaity, 0.5s;
 
   &:hover {
@@ -144,7 +143,7 @@
   }
 }
 
-.footer-wrapper__list-icons svg {
+.footer__list-icons svg {
   transition: opacity, 0.5s;
   width: 20px;
   height: 20px;
