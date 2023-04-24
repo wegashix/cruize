@@ -4,7 +4,7 @@
   object-fit: cover;
   box-shadow: 0 4px 4px #00000040;
 
-  @include vp-1023{
+  @include vp-1023 {
     height: 100%;
   }
 }
@@ -155,8 +155,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  overflow-y:scroll;
 
   @include vp-767 {
+    flex-wrap: nowrap;
     visibility: hidden;
     width: 0;
     height: 100vh;
@@ -173,8 +175,8 @@
 }
 
 .nav__list.active ul {
-  padding: 87px 2px;
-  width: 285px;
+  padding: 62px 2px;
+  width: 89%;
   visibility: visible;
   transform: translateX(0);
 }
@@ -188,6 +190,7 @@
 
 .nav__list.active li {
   margin-bottom: 26px;
+  background-color: $color-white;
 }
 
 
@@ -203,8 +206,8 @@
     display: block;
     position: absolute;
     z-index: 99;
-    top: 0;
-    right: 224px;
+    top: 14px;
+    left: 6%;
     transform: translateX(0);
   }
 }

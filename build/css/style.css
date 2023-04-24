@@ -1415,11 +1415,12 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  overflow-y: scroll;
 }
 
 .nav__list.active ul {
-  padding: 87px 2px;
-  width: 285px;
+  padding: 62px 2px;
+  width: 89%;
   visibility: visible;
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
@@ -1434,6 +1435,7 @@ button,
 
 .nav__list.active li {
   margin-bottom: 26px;
+  background-color: #f9fbfd;
 }
 
 .nav__list img {
@@ -2537,6 +2539,8 @@ button,
   }
 
   .nav__list ul {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
     visibility: hidden;
     width: 0;
     height: 100vh;
@@ -2565,8 +2569,8 @@ button,
     display: block;
     position: absolute;
     z-index: 99;
-    top: 0;
-    right: 224px;
+    top: 14px;
+    left: 6%;
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
