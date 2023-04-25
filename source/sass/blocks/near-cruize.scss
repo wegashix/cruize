@@ -4,7 +4,7 @@
 
   @include vp-1023 {
     padding: 64px 0;
-    margin-bottom: 13px;
+    margin-bottom: 16px;
   }
 
   @include vp-767 {
@@ -14,35 +14,38 @@
   }
 }
 
+.near-cruize .container {
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
 .near-cruize__cards {
   margin: 0 auto;
+  width: calc(100% - 168px);
   max-width: 1130px;
-  width: 100%;
-  padding: 21px 0;
-  display: grid;
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
-  grid-template-columns: repeat(4, 1fr);
-
-  @include vp-1223 {
-    grid-template-columns: repeat(3, 1fr);
-  }
 
   @include vp-1023 {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 23px 36px;
+    width: calc(100% - 72px);
+    padding: 23px 0 20px;
   }
 
   @include vp-767 {
-    grid-template-columns: repeat(1, 1fr);
+    width: calc(100% - 50px);
     padding: 20px 0;
   }
 }
 
 .near-cruize__card {
   position: relative;
+  width: calc((100% - 90px) / 4);
   max-width: 260px;
-  width: 100%;
-  min-height: 386px;
+  height: calc((100vw - 250px - 90px) * 386 / 260 / 4);
+  max-height: 386px;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -52,16 +55,18 @@
   background: $color-dark-blue;
   box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
 
-  @include vp-1223 {
-    margin: 0 auto;
-  }
-
   @include vp-1023 {
-    max-width: 309px;
+    width: calc((100% - 30px) / 2);
+    max-width: calc((100% - 30px) / 2);
+    height: calc((100vw - 110px - 30px) * 386 / 309 / 2);
+    max-height: calc((100vw - 120px - 30px) * 386 / 309 / 2);
   }
 
   @include vp-767 {
-    max-width: 270px;
+    width: 100%;
+    max-width: 100%;
+    height: calc((100vw - 50px) * 386 / 270);
+    max-height: calc((100vw - 50px) * 386 / 270);
   }
 
   &:hover > .near-cruize__desc {
@@ -99,8 +104,13 @@
 }
 
 .near-cruize__desc {
+  position: static;
+  z-index: 99;
+  padding: 0;
   transition: opacity, 0.8s;
   opacity: 0;
+  width: 100%;
+  overflow-y: auto;
 
   @include vp-1023 {
     padding: 0 10px;
@@ -117,7 +127,7 @@
   top: 0;
   left: 0;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 100%;
   height: 100%;
   display: flex;
@@ -189,7 +199,7 @@
   line-height: 150%;
   border: none;
   background-color: #f9fbfd;
-  min-width: 210px;
+
   width: 100%;
   padding: 10px;
   transition: opacity, 0.8s;

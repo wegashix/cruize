@@ -1726,21 +1726,23 @@ button,
 
 .near-cruize__cards {
   margin: 0 auto;
+  width: calc(100% - 168px);
   max-width: 1130px;
-  width: 100%;
-  padding: 21px 0;
-  display: -ms-grid;
-  display: grid;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 30px;
-  -ms-grid-columns: (1fr)[4];
-  grid-template-columns: repeat(4, 1fr);
 }
 
 .near-cruize__card {
   position: relative;
+  width: calc((100% - 90px) / 4);
   max-width: 260px;
-  width: 100%;
-  min-height: 386px;
+  height: calc((100vw - 250px - 90px) * 386 / 260 / 4);
+  max-height: 386px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1784,10 +1786,15 @@ button,
 }
 
 .near-cruize__desc {
+  position: static;
+  z-index: 99;
+  padding: 0;
   -webkit-transition: opacity, 0.8s;
   -o-transition: opacity, 0.8s;
   transition: opacity, 0.8s;
   opacity: 0;
+  width: 100%;
+  overflow-y: auto;
 }
 
 .near-cruize__bg {
@@ -1798,7 +1805,7 @@ button,
   top: 0;
   left: 0;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -1865,7 +1872,6 @@ button,
   line-height: 150%;
   border: none;
   background-color: #f9fbfd;
-  min-width: 210px;
   width: 100%;
   padding: 10px;
   -webkit-transition: opacity, 0.8s;
@@ -2192,15 +2198,6 @@ button,
 }
 
 @media (max-width: 1223px) {
-  .near-cruize__cards {
-    -ms-grid-columns: (1fr)[3];
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .near-cruize__card {
-    margin: 0 auto;
-  }
-
   .reservation__wrapper {
     padding: 20px 40px;
   }
@@ -2343,17 +2340,19 @@ button,
 
   .near-cruize {
     padding: 64px 0;
-    margin-bottom: 13px;
+    margin-bottom: 16px;
   }
 
   .near-cruize__cards {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-    padding: 23px 36px;
+    width: calc(100% - 72px);
+    padding: 23px 0 20px;
   }
 
   .near-cruize__card {
-    max-width: 309px;
+    width: calc((100% - 30px) / 2);
+    max-width: calc((100% - 30px) / 2);
+    height: calc((100vw - 110px - 30px) * 386 / 309 / 2);
+    max-height: calc((100vw - 120px - 30px) * 386 / 309 / 2);
   }
 
   .near-cruize h3 {
@@ -2729,14 +2728,20 @@ button,
     padding-bottom: 45px;
   }
 
+  .near-cruize .container {
+    padding: 0;
+  }
+
   .near-cruize__cards {
-    -ms-grid-columns: (1fr)[1];
-    grid-template-columns: repeat(1, 1fr);
+    width: calc(100% - 50px);
     padding: 20px 0;
   }
 
   .near-cruize__card {
-    max-width: 270px;
+    width: 100%;
+    max-width: 100%;
+    height: calc((100vw - 50px) * 386 / 270);
+    max-height: calc((100vw - 50px) * 386 / 270);
   }
 
   .near-cruize h3 {
