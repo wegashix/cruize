@@ -41,3 +41,7 @@
     left: 0;
   }
 }
+
+.background-header.active > .article {
+  opacity: 0.5;
+}

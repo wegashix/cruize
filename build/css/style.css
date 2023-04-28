@@ -1341,6 +1341,10 @@ button,
   left: 0;
 }
 
+.background-header.active > .article {
+  opacity: 0.5;
+}
+
 .nav {
   max-width: 1224px;
   width: 100%;
@@ -1589,14 +1593,16 @@ button,
   align-items: center;
   padding: 0;
   margin-top: 24px;
+  margin-right: -10px;
 }
 
 .footer__list-icons ul li {
   list-style: none;
-  margin-left: 26px;
+  margin-left: 6px;
 }
 
 .footer__list-icons ul a {
+  padding: 10px;
   -webkit-transition: opaity, 0.5s;
   -o-transition: opaity, 0.5s;
   transition: opaity, 0.5s;
@@ -1673,7 +1679,7 @@ button,
 .advantages__wrapper {
   background-image: url("../img/advantages-desctop@2x.png");
   width: 100%;
-  padding: 82px 71px 120px;
+  padding: 82px 0 120px;
 }
 
 .advantages__wrapper h3 {
@@ -1689,6 +1695,11 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 40px;
   margin: 0 auto;
   max-width: 1160px;
@@ -1741,7 +1752,7 @@ button,
   position: relative;
   width: calc((100% - 90px) / 4);
   max-width: 260px;
-  height: calc((100vw - 250px - 90px) * 386 / 260 / 4);
+  height: calc((100vw - 237px - 90px) * 386 / 260 / 4);
   max-height: 386px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1957,8 +1968,8 @@ button,
   font-size: 40px;
   line-height: 150%;
   color: #011c40;
-  margin-bottom: 7px;
-  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-top: 18px;
 }
 
 .reservation__desc p {
@@ -1985,7 +1996,7 @@ button,
   font-size: 18px;
   line-height: 150%;
   color: #f9fbfd;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
   margin-top: 0;
 }
 
@@ -2073,6 +2084,7 @@ button,
   font-size: 14px;
   line-height: 150%;
   color: #011c40;
+  background-color: #f9fbfd;
   width: 100%;
   text-align: center;
   padding: 11px;
@@ -2092,7 +2104,7 @@ button,
   max-width: 1366px;
   width: 100%;
   margin: 0 auto;
-  padding: 120px 71px;
+  padding: 121px 71px;
 }
 
 .location__desc h4 {
@@ -2101,7 +2113,7 @@ button,
   line-height: 150%;
   color: #011c40;
   margin-bottom: 33px;
-  margin-top: 18px;
+  margin-top: 22px;
 }
 
 .location__desc ul {
@@ -2282,7 +2294,7 @@ button,
   }
 
   .footer__list-icons ul li {
-    margin-left: 21px;
+    margin-left: 0px;
   }
 
   .footer__list-icons svg {
@@ -2326,6 +2338,7 @@ button,
 
   .advantages__card {
     padding: 26px 18px 7px 18px;
+    max-width: 206px;
   }
 
   .advantages__card h4 {
@@ -2429,13 +2442,14 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 78px 0 100px;
+    padding: 70px 0 100px;
   }
 
   .reservation__desc h3 {
     font-size: 34px;
     line-height: 150%;
     text-align: center;
+    margin-bottom: 6px;
   }
 
   .reservation__desc p {
@@ -2450,6 +2464,14 @@ button,
 
   .reservation__form form {
     margin-left: 0;
+  }
+
+  .reservation__form input {
+    margin-bottom: 19px;
+  }
+
+  .reservation__submit button {
+    margin-top: 25px;
   }
 
   .location {
@@ -2618,7 +2640,7 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     padding: 0;
-    padding-top: 41px;
+    padding-top: 39px;
   }
 
   .footer__list {
@@ -2657,14 +2679,13 @@ button,
   }
 
   .footer__list-icons ul {
-    margin-left: -4px;
+    margin-left: -14px;
     margin-top: 15px;
     margin-bottom: 32px;
   }
 
   .footer__list-icons ul li {
-    margin-left: 0;
-    margin-right: 21px;
+    margin-right: 0;
   }
 
   .traveling {
@@ -2714,6 +2735,7 @@ button,
   }
 
   .advantages__card {
+    max-width: inherit;
     min-height: 250px;
     padding-bottom: 0;
   }
@@ -2799,7 +2821,7 @@ button,
   }
 
   .reservation__wrapper {
-    padding-top: 50px;
+    padding-top: 41px;
     padding-bottom: 68px;
   }
 
@@ -2844,7 +2866,7 @@ button,
   }
 
   .reservation__submit button {
-    margin-top: 27px;
+    margin-top: 29px;
     padding: 10px;
   }
 
