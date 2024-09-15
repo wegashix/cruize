@@ -14,27 +14,12 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
+@import "blocks/header.scss";
 
 // Blocks
 // ---------------------------------
 
-@import "blocks/btn";
-@import "blocks/modal";
-@import "blocks/custom-input";
-@import "blocks/custom-toggle";
-@import "blocks/custom-select";
-@import "blocks/header.scss";
-@import "blocks/background-header.scss";
-@import "blocks/nav.scss";
-@import "blocks/article.scss";
-@import "blocks/footer.scss";
-@import "blocks/traveling.scss";
-@import "blocks/advantages.scss";
-@import "blocks/near-cruize.scss";
-@import "blocks/reservation.scss";
-@import "blocks/location.scss";
-@import "blocks/location-wrapper.scss";
-@import "blocks/map.scss";
+
 // ---------------------------------
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
